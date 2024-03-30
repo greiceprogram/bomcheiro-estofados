@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Kode Mono", monospace;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -51,7 +52,7 @@ section > img {
 }
 
 .textone > h2 {
-    text-shadow: 3px 2px #5F9EA0;
+    text-shadow: 1px 2px #5F9EA0;
     color: black;
 }
 main{
@@ -120,7 +121,7 @@ h2:hover{
     border-bottom: 4mm ridge #5F9EA0;
 }
 
-h4:hover{
+h4:hover{   
     color: gray;
 }
 .box > p {
@@ -128,34 +129,28 @@ h4:hover{
     margin-top: 40px;
 }
 
-aside > .qualit{
+aside {
+    height: 250px;
+    border-top: thick double #32a1ce;
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 600px;
-    border-top: thick double #32a1ce;
+    border-bottom: thick double #32a1ce;
 }
+
 
 aside > h2 { 
     margin-top: 35px;
 }
 
 .photo > p {
-    margin-top: 60px;
-    text-align: start;
-}
-
-aside > .photo > img{
-    margin-left: 350px;
     margin-top: 100px;
-    border-radius: 150px;
-    width: 650px;
-    height: 250px;
+    text-align: center;
 }
 
 
 footer{
-   
+    border-top: thick double #32a1ce;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +180,7 @@ img:hover{
 
  a {
     background: white;
-    font-family: Kode Mono;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 15px;
     border-radius: 30px;
@@ -203,21 +198,11 @@ img:hover{
     color: black;
 }
 
-
-
-
-/* .quem-somos{
-    background-color: 	#5F9EA0;
-}
-.margin{
-    padding-top: 50px;
-    padding-bottom: 50px;
+img{
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 150px;
+    width: 650px;
+    height: 250px;  
 }
 
-.parceiros{
-    background-color:#d9d9d9;
-}
-
-.servicos{
-    background-color: #5F9EA0;
-} */
