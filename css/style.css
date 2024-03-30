@@ -1,13 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Kode Mono", monospace;
+}
 
 body{
-    font: 20px Arial, sans-serif;
-}
-.navbar{
+    width: 100%;
     background-color: #d9d9d9;
+    
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-shadow: 1px 2px #5F9EA0; 
+    margin-top: 25px;
+    gap: 20px;
+    
+}
+
+header > h1{
+    color: black;
+    font-size: 60px;
+
 }
 
 
-.quem-somos{
+nav > a {
+    font-size: 25px;
+    color: black;
+}
+
+section {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > img {
+
+    width: 450px;
+    height: 450px;
+}
+
+.textone > h2 {
+    text-shadow: 3px 2px #5F9EA0;
+    color: black;
+}
+main{
+    border-top: thick double #32a1ce;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    height: 300px;
+}
+
+.about > h1{
+    margin-top: 1px;
+    text-align: center;
+    
+}
+
+h1:hover{
+    color: #5F9EA0;
+}
+
+.about > p{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    
+}
+
+ main > .image > img {
+    margin-left: 25px;
+    width: 250px;
+    margin-top: 60px;
+    border: 1px solid #5F9EA0;
+    border-bottom-left-radius: 250px 100px;
+}
+
+article{
+    border-top: thick double #32a1ce;
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    gap: 30px;
+}
+
+article > h2{
+    margin-top: 35px;
+}
+
+h2:hover{
+    color: #5F9EA0;
+}
+.box{
+    margin-top: 100px;
+    width: 350px;
+    height: 300px;
+
+}
+
+.box > h4 {
+    margin-top: 15px;
+    text-align: center;
+    border-bottom: 4mm ridge #5F9EA0;
+}
+
+h4:hover{
+    color: gray;
+}
+.box > p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+aside > .qualit{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 600px;
+    border-top: thick double #32a1ce;
+}
+
+aside > h2 { 
+    margin-top: 35px;
+}
+
+.photo > p {
+    margin-top: 60px;
+    text-align: start;
+}
+
+aside > .photo > img{
+    margin-left: 350px;
+    margin-top: 100px;
+    border-radius: 150px;
+    width: 650px;
+    height: 250px;
+}
+
+
+footer{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-size: 12px;
+}
+
+
+img:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+  }
+
+.container{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+
+ a {
+    background: white;
+    font-family: Kode Mono;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 30px;
+    box-shadow: 3px 3px gray;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    color: black;
+    
+  }
+
+  a:hover{
+    background-color: #5F9EA0;
+    color: black;
+}
+
+
+
+
+/* .quem-somos{
     background-color: 	#5F9EA0;
 }
 .margin{
@@ -21,4 +220,4 @@ body{
 
 .servicos{
     background-color: #5F9EA0;
-}
+} */
