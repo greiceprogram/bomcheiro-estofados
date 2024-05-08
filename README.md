@@ -4,7 +4,7 @@
 
 Bem-vindo ao repositório do Bom Cheiro & Estofados! Aqui você encontrará informações sobre nossa empresa de limpeza de estofados e os serviços que oferecemos.
 
-<img src="../bomcheiro-estofados/src/img/Macbook-Air-127.0.0.1.png">
+<img src="./src/img/Macbook-Air-127.0.0.1.png">
 
 <p>- Liguangens utilizadas: html | Css | </p> 
 
