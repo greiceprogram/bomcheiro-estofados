@@ -203,12 +203,21 @@ border-radius: 550px 0px 0px 0px;
   }
 
 .card {
-width:250px;
+/* width:250px;
 height: 350px;
 margin: 20px;
 padding: 20px;
 border: 1px solid #ccc;
-border-radius: 8px;
+border-radius: 8px; */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+border: 1px solid #ccc;
+padding: 20px;
+width: 300px;
+margin: 20px auto;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: width 0.3s ease;
 background-color: #E2D7D5;
@@ -216,11 +225,24 @@ gap: 20px;
 
 }
 
+.card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card p {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .card img {
   float: right; 
   margin-left: 10px; 
   width: 100px;
-  border-radius: 4px;
+  border-radius: 350  px;
 
 }
 
@@ -237,6 +259,39 @@ margin-top: 25px;
 margin-bottom: 15px;
 text-align: justify;
 color: #666;
+} */
+
+.footer {
+  background-color: #F0C119;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .company-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer .social-media, .footer .contact {
+  margin-bottom: 10px;
+}
+.footer .social-media a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.footer .social-media a:hover {
+  text-decoration: underline;
+}
+.footer .contact p {
+  margin: 5px 0;
 }
 
 @media (max-width: 880px) {
