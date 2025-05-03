@@ -4,7 +4,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "Varela", sans-serif;
+font-family: "Nunito", sans-serif;
 
 }
 
@@ -12,7 +12,7 @@ header .navbar{
 top: 0;
 left: 0;
 width: 100%;
-height: 350px;
+height: 150px;
 padding: 1.3rem 10%;
 display: flex;
 justify-content: space-around;
@@ -27,13 +27,15 @@ text-decoration: none;
 transition: 0.3s;
 font-weight: 50%;
 font-size: 25px;
+}
 
+a:hover{
+  background-color: #F0C119;
 }
 
 header img{
-width: 250px;
-height: 250px;
-
+width: 150px;
+height: 150px;
 }
 
 main{
@@ -117,7 +119,6 @@ margin: 0 auto;
 }
 
 .about p {
-width: 70%;
 margin-bottom: -5px;
 margin-top: 10px;
 padding: 10px;
@@ -130,25 +131,7 @@ padding-left: 20px;
   padding: 0;
   display: flex;
   justify-content: flex-start;
-}
-
-.sofa{
-margin-left: 70%;
-display: flex;
-justify-content: flex-end;
-
-
-}
-
-.avatar {
-width: 350px;
-height: 350px;
-display: flex;
-justify-content: left;
-align-items: flex-end;
-border-radius: 550px 0px 0px 0px;
-
-
+  font-size: 20px;
 }
 
 .img img{
@@ -156,18 +139,70 @@ border-radius: 550px 0px 0px 0px;
 
 }
 
-.banner {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 500px; 
+.carousel-simples {
+  padding-top: 50px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.banner img {
-  max-width: 100%; 
-  max-height: 80%; 
-  object-fit: cover; 
+.slides {
+  position: relative;
+  overflow: hidden;
 }
+
+.imagens {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 650px;
+  display: block;
+  border-radius: 8px;
+}
+
+input[name="slide"] {
+  display: none;
+}
+
+/* Controle de navegação */
+#slide1:checked ~ .imagens {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .imagens {
+  transform: translateX(-100%);
+}
+
+/* Botões */
+.navegacao {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.botao {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input#slide1:checked ~ .navegacao label[for="slide1"],
+input#slide2:checked ~ .navegacao label[for="slide2"] {
+  background-color: #333;
+}
+
 
 .service{
   color: black;
@@ -188,7 +223,6 @@ border-radius: 550px 0px 0px 0px;
   padding: 55px;
   width: 80%;
   margin: 0 auto;
-  
   }
   
   .service-one{
@@ -196,20 +230,11 @@ border-radius: 550px 0px 0px 0px;
     flex-wrap: wrap;
   }
 
-  .service-one h1{
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
+  .service-one h3{
+    padding: 0 10px;
   }
 
 .card {
-/* width:250px;
-height: 350px;
-margin: 20px;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 8px; */
-
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -238,31 +263,11 @@ border-radius: 8px;
 }
 .card img {
   max-width: 100%;
-  height: auto;
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
 }
 
-/* .card img {
-  float: right; 
-  margin-left: 10px; 
-  width: 100px;
-  border-radius: 350  px;
-
-}
-
-.card h2 {
-font-size: 20px;
-text-align: center;
-margin-top: 5px;
-color: #333;
-}
-
-.card p {
-font-size: 12px;
-margin-top: 25px;
-margin-bottom: 15px;
-text-align: justify;
-color: #666;
-} */
 
 .footer {
   background-color: #F0C119;
