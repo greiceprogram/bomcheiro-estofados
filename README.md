@@ -1,5 +1,5 @@
 
-<h1> Bom Cheiro & Estofados </h1>
+<h1> Bom Cheiro  Estofados </h1>
 
 
 Bem-vindo ao repositório do Bom Cheiro & Estofados! Aqui você encontrará informações sobre nossa empresa de limpeza de estofados e os serviços que oferecemos.
