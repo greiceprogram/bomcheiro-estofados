@@ -166,6 +166,7 @@ border-radius: 550px 0px 0px 0px;
   width: 650px;
   display: block;
   border-radius: 8px;
+
 }
 
 input[name="slide"] {
@@ -199,7 +200,7 @@ input[name="slide"] {
 }
 
 input#slide1:checked ~ .navegacao label[for="slide1"],
-input#slide2:checked ~ .navegacao label[for="slide2"] {
+input#slide2:checked ~ .navegacao label[for="slide2"]  {
   background-color: #333;
 }
 
@@ -215,7 +216,6 @@ input#slide2:checked ~ .navegacao label[for="slide2"] {
   padding: 50px;
   gap: 150px;
   font-size: 15px;
-  
   }
   
   .service{
